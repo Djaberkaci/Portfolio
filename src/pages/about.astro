@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Djaber KACI" description="About Djaber KACI Lorem Ipsum">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/at-work-2.jpg"
+					alt="Djaber at work"
+				/>
+			</Hero>
+			<section>
+				<h2 class="section-title">Experience</h2>
+				<h6 class="section-title_1"> From 06/2022 To  07/2022</h6>
+				<div class="content">
+					<span> Software Engineer Internship</span> at <span>Sonatrach</span>
+					<p>As a Software Engineer Intern at Sonatrach, I had the opportunity to work closely with engineers and gain valuable insights into their operations. This internship allowed me to discover the intricacies of their working environment, including their data center, while actively collaborating to identify solutions that could enhance overall efficiency and productivity</p>
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						I come from a strong background in software development, where my passion lies in creating innovative and user-friendly solutions. My journey in the tech world has been marked by a commitment to excellence, continuous learning, and a deep-seated curiosity about the possibilities that technology offers.
+					</p>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<h6 class="section-title_1"> From 06/2020 To  07/2023</h6>
+				<div class="content">			
+					<p>
+					I pursued a <span> Bachelor of Computer Science </span>with a keen focus on Information Systems. This comprehensive program equipped me with an extensive skill set and an in-depth understanding of various domains. These included mathematics, software development, data structures, object-oriented programming (OOP), database management, graph theory,web development, numerical methods, operating systems, user interface design (IHM), linear programming, mobile app development, and web semantics.
+
+					This educational foundation not only enriched my theoretical knowledge but also provided me with ample opportunities to apply these concepts in practical scenarios. It has served as the cornerstone for my professional journey, empowering me to tackle complex challenges and innovate effectively in the ever-evolving field of computer science and information systems.
+					</p>
+					<!-- <p>
+						Additionally, I am currently pursuing a <span>Master's degree in Big Data Analytics </span>, further deepening my expertise in data analysis and harnessing the power of data to derive valuable insights. This advanced education enables me to stay at the forefront of the rapidly evolving world of data science and analytics, equipping me with the skills to address the most intricate data challenges of today and tomorrow.
+					</p> -->
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills</h2>
+				<h6 class="section-title_1"> software development skills</h6>
+				<div class="content">
+					<p>-I have proficiency in all stages of software development, including creating detailed diagrams as part of the planning and analysis phases. I excel in design, development, testing, implementation, and ongoing maintenance to ensure successful project outcomes.</p>
+					<p>-Strong knowledge in web technologies such as Figma for designing wireframes and prototypes, html, CSS, Bootstrap, JavaScript,Vue.js python and its framework flask  </p>
+					<p>-A good understanding of common concepts, algorithms, and data structures.</p>						
+				</div>
+			</section>
+			<section>
+				<h6 class="section-title_1"> Data skills</h6>
+				<div class="content">
+					<p>Excel , SQL , Python </p>
+					<p>Power BI</p>
+				</div>
+			</section>
+			
+			<section>
+				<h2 class="section-title">Languages</h2>
+				<div class="content">
+					<span > English .C1</span>
+					<span class="spn"> French .C1 </span>
+					<span class="spn"> German .A2 </span>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+	h5{
+		margin: 1rem 0;
+	}
+	span{
+		font-weight: bold;
+	}
+	.spn{
+		margin-left: 2rem;
+	}
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+	.section-title_1 {
+		grid-column-start: 1;
+		color: var(--gray-0); 
+		text-align: start;
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
