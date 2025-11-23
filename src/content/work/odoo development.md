@@ -1,7 +1,7 @@
 ---
-title: Odoo ERP Development Projects
-publishDate: 2020-03-02 00:00:00
-img: /assets/Odoo-Modules.PNG
+title: Odoo ERP Development 
+publishDate: 2025-08-02 00:00:00
+img: /assets/odoo.PNG
 img_alt: Odoo ERP Development
 description: |
    I have developed multiple Odoo ERP modules, handling projects from initial conception to final deployment, tailored to meet the specific needs of the company.
