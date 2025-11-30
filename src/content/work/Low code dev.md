@@ -1,5 +1,5 @@
 ---
-title: Low-Code Development & MVP Builder
+title: Low-Code Development
 publishDate: 2025-07-01 00:00:00
 img: /assets/low-code-expert.jpg
 img_alt: Low-code expert portfolio image
