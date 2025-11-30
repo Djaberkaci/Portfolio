@@ -1,3 +1,4 @@
+---
 title: Low-Code Development & MVP Builder
 publishDate: 2025-07-01 00:00:00
 img: /assets/low-code-expert.png
@@ -10,3 +11,4 @@ tags:
   - Product design
   - Low-code
   - No-code
+---
