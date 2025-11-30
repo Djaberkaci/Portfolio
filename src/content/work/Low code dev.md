@@ -13,7 +13,7 @@ tags:
   - No-code
 ---
 
-> Low-Code Development & MVP Builder
+> Low-Code Dev & MVP Builder
 
 I build MVPs and web platforms using Bubble and other low-code tools. I help startups and businesses turn ideas into real products quickly and easily. My work covers everything from planning and design to deployment and user support.
 
